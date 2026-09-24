@@ -3,9 +3,11 @@
   border: 3px solid var(--primary-color);
   border-radius: 15px;
   padding: 20px;
-  margin: 16px;
+  margin: 5px;
   position: relative;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
+  align-items: center; 
+  text-align: center;
 }
 
 .card__bookmark-button {
@@ -42,7 +44,8 @@
   width: 24px;
   height: 24px;
   stroke: var(--text-muted);
-  transition: stroke 0.2s ease, transform 0.2s ease;
+  fill: none;
+  transition: stroke 0.2s ease, fill 0.2s ease, transform 0.2s ease;
 }
 
 /* hover effekt for bookmark */
@@ -50,6 +53,12 @@
   stroke: var(--primary-color);
   fill: var(--primary-color);
   transform: scale(1.1);
+}
+
+/* bookmarked state: stays permanently filled with blue */
+.card__bookmark-button--active .card__bookmark-icon {
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
 }
 
 .card__answer {
@@ -69,11 +78,20 @@
   background-color: var(--tag-bg);
   padding: 4px 10px;
   border-radius: 5px;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   color: #475569;
 }
 
 /* hide answers */
 .hidden {
   display: none;
+}
+
+.home {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto 80px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
