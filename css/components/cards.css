@@ -11,18 +11,21 @@
 .card__bookmark-button {
   background: none;
   border: none;
-  font-size: 1.3rem;
-  position: absolute;
-  top: 16px;
-  right: 16px;
   cursor: pointer;
+  padding: 3px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__question {
   font-size: 1.1rem;
   font-weight: 650;
   margin-bottom: 16px;
-  padding-right: 20px;
+  padding-right: 40px; /* for bookmark */
 }
 
 .card__button-answer {
@@ -33,6 +36,20 @@
   cursor: pointer;
   font-weight: 500;
   margin-bottom: 12px;
+}
+
+.card__bookmark-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--text-muted);
+  transition: stroke 0.2s ease, transform 0.2s ease;
+}
+
+/* hover effekt for bookmark */
+.card__bookmark-button:hover .card__bookmark-icon {
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
+  transform: scale(1.1);
 }
 
 .card__answer {
