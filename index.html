@@ -14,7 +14,11 @@
     <main>
       <!-- card 1 -->
       <article class="card">
-        <button class="card__bookmark-button" aria-label="Bookmark">🔖</button>
+        <button class="card__bookmark-button" aria-label="Bookmark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
+            <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
+          </svg>
+        </button>
         <h2 class="card__question">What is the CSS property used to change the text color?</h2>
         <button class="card__button-answer">Show answer</button>
         <p class="card__answer hidden">color</p>
@@ -26,7 +30,11 @@
 
       <!-- card 2 -->
       <article class="card">
-        <button class="card__bookmark-button" aria-label="Bookmark">🔖</button>
+        <button class="card__bookmark-button" aria-label="Bookmark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
+            <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
+          </svg>
+        </button>
         <h2 class="card__question">Which HTML tag is used to define an unordered list?</h2>
         <button class="card__button-answer">Show answer</button>
         <p class="card__answer hidden">&lt;ul&gt;</p>
@@ -38,7 +46,11 @@
 
       <!-- card 3 -->
       <article class="card">
-        <button class="card__bookmark-button" aria-label="Bookmark">🔖</button>
+        <button class="card__bookmark-button" aria-label="Bookmark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
+            <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
+          </svg>
+        </button>
         <h2 class="card__question">How do you make text bold in HTML using a semantic tag?</h2>
         <button class="card__button-answer">Show answer</button>
         <p class="card__answer hidden">&lt;strong&gt;</p>
@@ -48,5 +60,32 @@
         </ul>
       </article>
     </main>
+    
+    <nav class="navigation">
+      <!-- home link -->
+      <a class="navigation__link navigation__link--active" href="index.html" aria-label="Home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navigation__icon">
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>
+          <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        </svg>
+      </a>
+
+      <!-- bookmarks link -->
+      <a class="navigation__link" href="bookmarks.html" aria-label="Bookmarks">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navigation__icon">
+          <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
+        </svg>
+      </a>
+
+      <!-- profile link -->
+      <a class="navigation__link" href="profile.html" aria-label="Profile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navigation__icon">
+          <path d="M2 21a8 8 0 0 1 10.821-7.487"/>
+          <path d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/>
+          <circle cx="10" cy="8" r="5"/>
+        </svg>
+      </a>
+    </nav>
   </body>
 </html>
+
