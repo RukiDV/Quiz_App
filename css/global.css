@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #0398ef;
+  --card-bg-color: #f0c1e4;
+  --text-main: #0f172a;
+  --text-muted: #334155;
+  --button-bg: #f1f5f9;
+  --border-color: #cbd5e1;
+  --tag-bg: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f8fafc;
+  color: var(--text-main);
+}

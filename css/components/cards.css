@@ -1,0 +1,62 @@
+.card {
+  background-color: var(--card-bg-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 16px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
+}
+
+.card__bookmark-button {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.card__question {
+  font-size: 1.1rem;
+  font-weight: 650;
+  margin-bottom: 16px;
+  padding-right: 20px;
+}
+
+.card__button-answer {
+  background-color: var(--button-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.card__answer {
+  margin-bottom: 16px;
+  color: var(--text-muted);
+}
+
+.card__tag-list {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card__tag {
+  background-color: var(--tag-bg);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+/* hide answers */
+.hidden {
+  display: none;
+}
