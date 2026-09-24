@@ -2,3 +2,22 @@
 @import "components/cards.css";
 @import "components/navigation.css";
 @import "components/profile.css";
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.header__title {
+  font-size: 2.25rem;
+  font-weight: 1000;
+  color: var(--primary-color);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
