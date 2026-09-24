@@ -1,0 +1,43 @@
+.navigation {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 2px solid var(--border-color);
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 8px 0;
+  z-index: 100;
+}
+
+.navigation__link {
+  padding: 10px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* base icon look */
+.navigation__icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--text-muted); /* default color for inactive icons */
+  transition: stroke 0.2s ease, transform 0.2s ease;
+}
+
+/* hover effect: change only the icons outline color */
+.navigation__link:hover .navigation__icon {
+  stroke: var(--primary-color);
+  transform: scale(1.1);
+}
+
+/* active page effect: change only the current page icons outline color */
+.navigation__link--active .navigation__icon {
+  stroke: var(--primary-color);
+}
