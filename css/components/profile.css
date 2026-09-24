@@ -15,25 +15,32 @@
   width: 80px;
   height: 80px;
   fill: var(--primary-color);
+  background-color: var(--card-bg-color);
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
 .profile__about, .profile__settings {
-  background: #ffffff;
+  background: var(--card-bg-color);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 16px;
+  padding: 20px;
   margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
 }
 
 .profile__counters {
   display: flex;
   gap: 16px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .counter-box {
   flex: 1;
-  background: #ffffff;
+  background: var(--card-bg-color);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 16px;
@@ -42,6 +49,15 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.counter-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
 }
 
 .counter-box__svg--question {
@@ -63,10 +79,63 @@
   color: var(--text-muted);
 }
 
+/* setting item container */
 .setting-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 12px;
+  margin-top: 16px;
+}
+
+/* --- toggle switch styles --- */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin-left: auto;
+  margin-right: 12px;
+}
+
+/* hide the default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* switch slider background */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cbd5e1;
+  transition: 0.3s ease;
+  border-radius: 26px;
+}
+
+/* round knob inside the slider */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s ease;
+  border-radius: 50%;
+}
+
+/* when the checkbox is checked, shift color and knob */
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
 }
 
