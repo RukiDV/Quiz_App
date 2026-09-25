@@ -5,19 +5,40 @@
 
 .header {
   background-color: #ffffff;
-  border-bottom: 1px solid var(--border-color);
-  padding: 16px;
-  text-align: center;
+  
+  /* Nur noch 3 dezente Fragezeichen mit viel Abstand */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='70' viewBox='0 0 400 70'%3E%3Ctext x='50' y='50' fill='%23ff6b81' font-size='28' font-weight='bold' transform='rotate(-15 50 45)' opacity='1.0'%3E?%3C/text%3E%3Ctext x='200' y='60' fill='%2300a8ff' font-size='24' font-weight='bold' transform='rotate(15 200 50)' opacity='1.0'%3E?%3C/text%3E%3Ctext x='340' y='40' fill='%23fbc531' font-size='25' font-weight='bold' transform='rotate(10 340 40)' opacity='1.0'%3E?%3C/text%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+
+  border-bottom: 3px solid var(--primary-color); 
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
 }
 
 .header__title {
-  font-size: 2.25rem;
-  font-weight: 1000;
+  position: relative;
+  z-index: 2;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--primary-color);
   margin: 0;
-  letter-spacing: 0.5px;
+
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 1.0);
+  padding: 6px 20px;
+  border-radius: 12px;
+}
+
+/* --- settings for questions mark --- */
+.header__dec-question {
+  position: absolute;
+  font-weight: 800;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.6;
+  z-index: 1;
 }

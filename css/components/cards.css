@@ -11,21 +11,45 @@
   text-align: center;
 }
 
+/* --- bookmark cards --- */
+
 .card__bookmark-button {
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 4px;
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: -9px;
+  right: 10px;
   color: var(--text-muted);
   transition: color 0.2s ease, transform 0.15s ease;
+
 }
 
 .card__bookmark-button:hover {
   color: var(--primary-color);
   transform: scale(1.1);
+}
+
+.card__bookmark-icon {
+  width: 30px;
+  height: 30px;
+  stroke: var(--primary-color);
+  fill: none;
+  transition: stroke 0.2s ease, fill 0.2s ease, transform 0.2s ease;
+}
+
+/* hover effekt for bookmark */
+.card__bookmark-button:hover .card__bookmark-icon {
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
+  transform: scale(1.1);
+}
+
+/* bookmarked state: stays permanently filled with blue */
+.card__bookmark-button--active .card__bookmark-icon {
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
 }
 
 .card__question {
@@ -83,28 +107,6 @@
   display: none;
 }
 
-/* --- bookmark cards --- */
-
-.card__bookmark-icon {
-  width: 24px;
-  height: 24px;
-  stroke: var(--text-muted);
-  fill: none;
-  transition: stroke 0.2s ease, fill 0.2s ease, transform 0.2s ease;
-}
-
-/* hover effekt for bookmark */
-.card__bookmark-button:hover .card__bookmark-icon {
-  stroke: var(--primary-color);
-  fill: var(--primary-color);
-  transform: scale(1.1);
-}
-
-/* bookmarked state: stays permanently filled with blue */
-.card__bookmark-button--active .card__bookmark-icon {
-  stroke: var(--primary-color);
-  fill: var(--primary-color);
-}
 
 .home {
   padding: 20px;

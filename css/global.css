@@ -11,6 +11,11 @@
   --nav-button-bg: #f1f5f9;
 }
 
+html {
+  /* scroll bar for other pages */
+  overflow-y: scroll;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,4 +26,14 @@ body {
   font-family: 'Poppins', system-ui, sans-serif;
   background-color: #f8fafc;
   color: var(--text-main);
+}
+
+/* --- colorful question marks background --- */
+body {
+  background-color: #faf7f9; 
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Ctext x='50' y='80' fill='%23ff6b81' font-size='24' font-weight='bold' transform='rotate(-15 50 80)' opacity='0.6'%3E?%3C/text%3E%3Ctext x='250' y='120' fill='%2300a8ff' font-size='32' font-weight='bold' transform='rotate(20 250 120)' opacity='0.6'%3E?%3C/text%3E%3Ctext x='320' y='280' fill='%23fbc531' font-size='20' font-weight='bold' transform='rotate(10 320 280)' opacity='0.6'%3E?%3C/text%3E%3Ctext x='100' y='320' fill='%239c88ff' font-size='28' font-weight='bold' transform='rotate(-25 100 320)' opacity='0.6'%3E?%3C/text%3E%3Ctext x='220' y='370' fill='%234cd137' font-size='22' font-weight='bold' transform='rotate(15 220 370)' opacity='0.6'%3E?%3C/text%3E%3Ctext x='30' y='210' fill='%23e84393' font-size='26' font-weight='bold' transform='rotate(30 30 210)' opacity='0.6'%3E?%3C/text%3E%3C/svg%3E");
+
+  /* repeats the questions mark in the background */
+  background-repeat: repeat;
 }

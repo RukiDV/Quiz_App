@@ -1,7 +1,11 @@
 .profile {
-  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 24px;
   max-width: 600px;
-  margin: 0 auto 80px auto;
+  margin: 30px auto 80px auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
 }
 
 .profile__header {
