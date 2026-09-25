@@ -6,7 +6,6 @@
   margin: 5px;
   position: relative;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
-  position: relative;
   align-items: center; 
   text-align: center;
 }
@@ -23,7 +22,6 @@
   right: 10px;
   color: var(--text-muted);
   transition: color 0.2s ease, transform 0.15s ease;
-
 }
 
 .card__bookmark-button:hover {
@@ -39,7 +37,7 @@
   transition: stroke 0.2s ease, fill 0.2s ease, transform 0.2s ease;
 }
 
-/* hover effekt for bookmark */
+/* hover effect for bookmark */
 .card__bookmark-button:hover .card__bookmark-icon {
   stroke: var(--primary-color);
   fill: var(--primary-color);
@@ -60,6 +58,19 @@
   margin-bottom: 16px;
 }
 
+.card__details {
+  width: 100%;
+}
+
+/* hidde arrow for dropdown */
+.card__details summary::-webkit-details-marker {
+  display: none;
+}
+
+.card__details summary {
+  list-style: none;
+}
+
 .card__button-answer {
   background-color: var(--primary-color);
   color: white;
@@ -71,6 +82,7 @@
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.1s ease;
   margin-bottom: 12px;
+  display: inline-block;
 }
 
 .card__button-answer:hover {
@@ -82,8 +94,6 @@
   color: var(--text-main);
   margin-bottom: 16px;
   padding: 8px 12px;
-  background-color: rgba(0, 0, 0, 0.02);
-  border-radius: 8px;
 }
 
 .card__tag-list {
@@ -101,12 +111,6 @@
   font-size: 0.75rem;
   color: #475569;
 }
-
-/* hide answers */
-.hidden {
-  display: none;
-}
-
 
 .home {
   padding: 20px;
