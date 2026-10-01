@@ -14,16 +14,14 @@
     <main class="home">
       <!-- bookmarked card 1 -->
       <article class="card">
-        <button class="card__bookmark-button card__bookmark-button--active" aria-label="Remove Bookmark">
+        <button class="card__bookmark-button card__bookmark-button--active" data-js="bookmark-button" aria-label="Remove Bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
             <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
           </svg>
         </button>
         <h2 class="card__question">What is the CSS property used to change the text color?</h2>
-        <details class="card__details">
-          <summary class="card__button-answer">Show answer</summary>
-          <p class="card__answer">color</p>
-        </details>
+        <button class="card__button-answer" data-js="answer-button">Show answer</button>
+        <p class="card__answer card__answer--hidden" data-js="answer">color</p>
         <ul class="card__tag-list">
           <li class="card__tag">#html</li>
           <li class="card__tag">#css</li>
@@ -32,16 +30,14 @@
 
       <!-- bookmarked card 2 -->
       <article class="card">
-        <button class="card__bookmark-button card__bookmark-button--active" aria-label="Remove Bookmark">
+        <button class="card__bookmark-button card__bookmark-button--active" data-js="bookmark-button" aria-label="Remove Bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
             <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
           </svg>
         </button>
         <h2 class="card__question">How do you make text bold in HTML using a semantic tag?</h2>
-        <details class="card__details">
-          <summary class="card__button-answer">Show answer</summary>
-          <p class="card__answer">strong</p>
-        </details>
+        <button class="card__button-answer" data-js="answer-button">Show answer</button>
+        <p class="card__answer card__answer--hidden" data-js="answer">strong</p> 
         <ul class="card__tag-list">
           <li class="card__tag">#html</li>
           <li class="card__tag">#semantics</li>
@@ -74,6 +70,7 @@
         </svg>
       </a>
     </nav>
+    <script src="./js/index.js" defer></script>
   </body>
 </html>
 

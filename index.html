@@ -14,17 +14,14 @@
     <main class="home">
       <!-- card 1 -->
       <article class="card">
-        <button class="card__bookmark-button" aria-label="Bookmark">
+        <button class="card__bookmark-button" data-js="bookmark-button" aria-label="Bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
             <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
           </svg>
         </button>
         <h2 class="card__question">What is the CSS property used to change the text color?</h2> 
-        <details class="card__details">
-          <summary class="card__button-answer">Show answer</summary>
-          <p class="card__answer">color</p>
-        </details>
-
+        <button class="card__button-answer" data-js="answer-button">Show answer</button>
+        <p class="card__answer card__answer--hidden" data-js="answer">color</p>
         <ul class="card__tag-list">
           <li class="card__tag">#html</li>
           <li class="card__tag">#css</li>
@@ -33,16 +30,14 @@
 
       <!-- card 2 -->
       <article class="card">
-       <button class="card__bookmark-button" aria-label="Bookmark">
+       <button class="card__bookmark-button" data-js="bookmark-button" aria-label="Bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
             <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
           </svg>
         </button> 
         <h2 class="card__question">Which HTML tag is used to define an unordered list?</h2>
-        <details class="card__details">
-          <summary class="card__button-answer">Show answer</summary>
-          <p class="card__answer">ul</p>
-        </details> 
+        <button class="card__button-answer" data-js="answer-button">Show answer</button>
+        <p class="card__answer card__answer--hidden" data-js="answer">ul</p>
         <ul class="card__tag-list">
           <li class="card__tag">#html</li>
           <li class="card__tag">#code</li>
@@ -51,16 +46,14 @@
 
       <!-- card 3 -->
       <article class="card">
-        <button class="card__bookmark-button" aria-label="Bookmark">
+        <button class="card__bookmark-button" data-js="bookmark-button" aria-label="Bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
             <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
           </svg>
         </button>
         <h2 class="card__question">How do you make text bold in HTML using a semantic tag?</h2>
-        <details class="card__details">
-          <summary class="card__button-answer">Show answer</summary>
-          <p class="card__answer">strong</p>
-        </details>
+        <button class="card__button-answer" data-js="answer-button">Show answer</button>
+        <p class="card__answer card__answer--hidden" data-js="answer">strong</p>
         <ul class="card__tag-list">
           <li class="card__tag">#html</li>
           <li class="card__tag">#semantics</li>
@@ -69,16 +62,14 @@
 
        <!-- card 4 -->
       <article class="card">
-        <button class="card__bookmark-button" aria-label="Bookmark">
+        <button class="card__bookmark-button" data-js="bookmark-button" aria-label="Bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
             <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
           </svg>
         </button>
         <h2 class="card__question">What does CSS stand for?</h2>
-        <details class="card__details">
-          <summary class="card__button-answer">Show answer</summary>
-          <p class="card__answer">Cascading Style Sheets</p>
-        </details>
+        <button class="card__button-answer" data-js="answer-button">Show answer</button>
+        <p class="card__answer card__answer--hidden" data-js="answer">Cascading Style Sheets</p>
         <ul class="card__tag-list">
           <li class="card__tag">#css</li>
           <li class="card__tag">#basics</li>
@@ -87,16 +78,14 @@
 
         <!-- card 5 -->
       <article class="card">
-        <button class="card__bookmark-button" aria-label="Bookmark">
+        <button class="card__bookmark-button" data-js="bookmark-button" aria-label="Bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
             <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
           </svg>
         </button>
         <h2 class="card__question">Which property is used to change the background color in CSS?</h2>
-        <details class="card__details">
-          <summary class="card__button-answer">Show answer</summary>
-          <p class="card__answer">background-color</p>
-        </details>
+        <button class="card__button-answer" data-js="answer-button">Show answer</button>
+        <p class="card__answer card__answer--hidden" data-js="answer">background-color</p> 
         <ul class="card__tag-list">
           <li class="card__tag">#css</li>
           <li class="card__tag">#design</li>
@@ -105,16 +94,14 @@
 
       <!-- card 6 -->
       <article class="card">
-        <button class="card__bookmark-button" aria-label="Bookmark">
+        <button class="card__bookmark-button" data-js="bookmark-button" aria-label="Bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
             <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
           </svg>
         </button>
         <h2 class="card__question">Which HTML element is used for the largest heading?</h2>
-        <details class="card__details">
-          <summary class="card__button-answer">Show answer</summary>
-          <p class="card__answer">h1</p>
-        </details>
+         <button class="card__button-answer" data-js="answer-button">Show answer</button>
+        <p class="card__answer card__answer--hidden" data-js="answer">h1</p>
         <ul class="card__tag-list">
           <li class="card__tag">#html</li>
           <li class="card__tag">#structure</li>
@@ -123,16 +110,14 @@
 
       <!-- card 7 -->
       <article class="card">
-        <button class="card__bookmark-button" aria-label="Bookmark">
+        <button class="card__bookmark-button" data-js="bookmark-button" aria-label="Bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card__bookmark-icon">
             <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
           </svg>
         </button>
         <h2 class="card__question">What does HTML stand for?</h2>
-        <details class="card__details">
-          <summary class="card__button-answer">Show answer</summary>
-          <p class="card__answer">HyperText Markup Language</p>
-        </details>
+        <button class="card__button-answer" data-js="answer-button">Show answer</button>
+        <p class="card__answer card__answer--hidden" data-js="answer">HyperText Markup Language</p>
         <ul class="card__tag-list">
           <li class="card__tag">#html</li>
           <li class="card__tag">#basics</li>
@@ -165,5 +150,6 @@
         </svg>
       </a>
     </nav>
+    <script src="./js/index.js" defer></script>
   </body>
 </html>
