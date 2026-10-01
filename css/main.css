@@ -4,7 +4,7 @@
 @import "components/profile.css";
 
 .header {
-  background-color: #ffffff;
+  background-color: #fefefe;
   
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='70' viewBox='0 0 400 70'%3E%3Ctext x='50' y='50' fill='%23ff6b81' font-size='28' font-weight='bold' transform='rotate(-15 50 45)' opacity='1.0'%3E?%3C/text%3E%3Ctext x='200' y='60' fill='%2300a8ff' font-size='24' font-weight='bold' transform='rotate(15 200 50)' opacity='1.0'%3E?%3C/text%3E%3Ctext x='340' y='40' fill='%23fbc531' font-size='25' font-weight='bold' transform='rotate(10 340 40)' opacity='1.0'%3E?%3C/text%3E%3C/svg%3E");
   background-repeat: repeat-x;
@@ -15,7 +15,7 @@
   z-index: 100;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .header__title {
@@ -26,7 +26,8 @@
   color: var(--primary-color);
   margin: 0;
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 0px 24px;
+  
+  background-color: rgba(255, 247, 249, 0.9);
+  padding: 0 24px;
   border-radius: 12px;
 }
