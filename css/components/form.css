@@ -48,6 +48,13 @@
   border-color: var(--primary-color);
 }
 
+.form__character-info {
+  font-size: 0.8rem;
+  color: var(--text-muted, #718096);
+  text-align: right;
+  margin-top: -5px;
+}
+
 .form__button {
   padding: 12px 20px;
   background-color: var(--primary-color);

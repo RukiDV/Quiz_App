@@ -18,13 +18,15 @@
         <!-- question -->
         <div class="form__field">
           <label for="question" class="form__label">Your question</label>
-          <textarea id="question" name="question" rows="4" required></textarea>
+          <textarea id="question" name="question" rows="4" maxlength="150" data-js="question-input" required></textarea>
+          <span class="form__character-info" data-js="question-counter">150 characters left HTML</span>
         </div>
 
         <!-- answer -->
         <div class="form__field">
           <label for="answer" class="form__label">Your answer</label>
-          <textarea id="answer" name="answer" rows="4" required></textarea>
+          <textarea id="answer" name="answer" rows="4" maxlength="150" data-js="answer-input" required></textarea>
+          <span class="form__character-info" data-js="answer-counter">150 characters left</span>
         </div>
 
         <!-- tag -->
@@ -70,5 +72,6 @@
         </svg>
       </a>
     </nav>
+    <script src="./js/form.js" defer></script>
   </body>
 </html>
