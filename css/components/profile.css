@@ -1,5 +1,5 @@
 .profile {
-  background-color: #ffffff;
+  background-color: var(--profile-bg, #ffffff); 
   border: 1px solid var(--border-color);
   border-radius: 20px;
   padding: 24px;
@@ -144,5 +144,19 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(24px);
+}
+
+/* clean post */
+.profile__heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  margin-bottom: 20px;
+}
+
+.profile__heading-icon {
+  stroke: var(--text-main);
 }
 
