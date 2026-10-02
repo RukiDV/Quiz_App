@@ -80,7 +80,7 @@
   margin-bottom: 12px;
   display: inline-block;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  font-size: inherit; /* important because button does not inherit the font size**/
+  font-size: inherit; /* important because button does not inherit the font size*/
 }
 
 .card__button-answer:hover {

@@ -1,0 +1,67 @@
+.form-container {
+  padding: 30px;
+  max-width: 600px;
+  margin: 40px auto 80px auto;
+  background-color: var(--card-bg-color, #ffffff);
+  border: 3px solid var(--primary-color);
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--text-main, #333);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-main, #444);
+}
+
+.form__field textarea, input {
+  padding: 17px;
+  border: 2px solid var(--border-color, #ddd);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  background-color: #ffffff;
+  color: var(--text-main, #000);
+}
+
+.form__field textarea:focus, .form__field input:focus {
+  border-color: var(--primary-color);
+}
+
+.form__button {
+  padding: 12px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  margin-top: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.form__button:hover {
+  opacity: 0.75;
+}
