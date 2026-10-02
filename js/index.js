@@ -1,3 +1,5 @@
+// it is not used anymore; different method using for loops instead of event delegation
+
 const bookmark_buttons = document.querySelectorAll('[data-js="bookmark-button"]');
 const answer_buttons = document.querySelectorAll('[data-js="answer-button"]');
 
